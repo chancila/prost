@@ -509,6 +509,9 @@ pub struct FileOptions {
     /// See the documentation for the "Options" section above.
     #[prost(message, repeated, tag = "999")]
     pub uninterpreted_option: ::prost::alloc::vec::Vec<UninterpretedOption>,
+
+    #[prost(unknown)]
+    pub unknown_fields: ::prost::UnknownFieldSet,
 }
 /// Nested message and enum types in `FileOptions`.
 pub mod file_options {
